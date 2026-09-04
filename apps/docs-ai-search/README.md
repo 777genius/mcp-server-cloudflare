@@ -24,4 +24,14 @@ Currently available tools:
 
 Connect your MCP client directly to `https://docs.mcp.cloudflare.com/mcp`. This server does not require OAuth.
 
+### Agent Plugins 1.0
+
+From a checkout of this repository, install the [bundled Agent Plugins 1.0 package](./agent-plugin) with the community-maintained Universal Agent Plugins CLI (Node.js 22+):
+
+```bash
+npx universal-agent-plugins add ./apps/docs-ai-search/agent-plugin
+```
+
+Run this from the repository root and choose your installed agents in the prompt. To select agents explicitly, append `--target codex,cursor,kiro`. Follow any client activation instructions printed by the CLI.
+
 Interested in contributing, and running this server locally? See the [CONTRIBUTING.md](../../CONTRIBUTING.md) in the repo root to get started.
